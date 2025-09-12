@@ -11,12 +11,12 @@ body {
   /*background-color: aquamarine;*/
 }
 
-.barra{
-  color: #2D387A;
+.barra a{
+  color: #2D387A !important;
 }
 
 .hero-section{
-  background-image: url(./assets/images/interior-del-gran-almacen-de-distribucion-con-estantes-apilados-con-paletas-y-productos-listos-para-el-mercado\ 1.png);
+  background-image: url(../assets/images/interior-del-gran-almacen-de-distribucion-con-estantes-apilados-con-paletas-y-productos-listos-para-el-mercado\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -44,6 +44,11 @@ body {
 
 .diferenciadores{
   background-color: #d4dae8;
+}
+
+.btn-secondary{
+  color:white!important;
+  background-color: #2D387A !important;
 }
 
 @media (max-width: 680px){
