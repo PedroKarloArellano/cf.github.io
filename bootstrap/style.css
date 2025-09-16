@@ -1,10 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 5% 5% 0 5%;
   background-color: #fdf2ce;
-  display: flex;
-  flex-direction: column;
   min-height: 95vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .main{
@@ -15,27 +14,27 @@ body {
   color: #2D387A !important;
 }
 
+.hero-section button{
+  border-radius: 50px !important;
+}
+
 .hero-section{
   background-image: url(../assets/images/interior-del-gran-almacen-de-distribucion-con-estantes-apilados-con-paletas-y-productos-listos-para-el-mercado\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    margin-top: 5rem;
+    height: 60vh;
+
+    color: white;
+}
+
+.hero-text{
+  margin-left: 5rem;
 }
 
 .servicios{
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
-  height: 40vh;
-}
-
-.servicios-options{
-  display: flex;
-  flex-direction: column;
-  gap: .5em;
-  width: 40%;
+  margin: 5% 0;
 }
 
 .servicios h1{
@@ -46,14 +45,144 @@ body {
   background-color: #d4dae8;
 }
 
-.btn-secondary{
+.diferenciadores h1{
+  color: #2D387A;
+}
+
+.accordion-button{
   color:white!important;
   background-color: #2D387A !important;
 }
 
-@media (max-width: 680px){
-  body{
-    background-color: darkorchid;
+.accordion-body{
+  color:#e1e6ff!important;
+  background-color: #131E5D !important;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
   }
 }
 
+.car-logos{
+  overflow: hidden;
+  padding: 60px 0;
+
+  background: white;
+  white-space: nowrap;
+
+  position: relative;
+}
+
+.car-logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+.car-logos::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0),white);
+  content: "";
+  z-index: 2;
+}
+
+.car-logos::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0),white);
+  content: "";
+  z-index: 2;
+}
+
+
+.logos-slide{
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logos-slide img{
+  height: 100px;
+  margin: 0 80px;
+}
+
+.clientes-title{
+  margin: 25px 0;
+  color: #2D387A;
+}
+
+.clientes-title strong{
+  color: #9EC10D;
+}
+
+.nuestros-clientes{
+  display: flex;
+  flex-direction: column;
+
+  margin: 50px 0;
+}
+
+.nuestros-clientes h1{
+  color: #2D387A;
+}
+
+.nuestros-clientes strong{
+  color: #9EC10D;
+}
+
+.con-text{
+  color: #2D387A;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.con-text strong{
+  color: #9EC10D;
+}
+
+.contanct-form{
+  color: white;
+  background: #2D387A;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.folleto{
+  color: #2D387A;
+  background: #e8f1c6;
+  margin: 2% 0;
+  padding: 3%;
+
+  font-weight: bolder;
+}
+
+.folleto button{
+  border-radius: 50px !important;
+}
+
+.footer{
+  color: white;
+  height: 200px;
+  background: #2D387A;
+}
+
+.footer img{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 15px;
+}
+
+.info{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
